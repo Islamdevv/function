@@ -833,3 +833,422 @@
 
 // function checkTask(arr, deleteItems) {}
 // checkTask(["good", "hello", 5], "good");
+
+
+// Создайте функцию rgb(), которая будет принимать три числовых аргумента
+// и возвращать строку вида «rgb(23,100,134)».
+// Если аргументы не заданы, считать их равными нулю.
+
+// function rgb(a, b, c) {
+//   return `rgb(${a === undefined ? 0 : a}, ${b === undefined ? 0 : b}, ${
+//     c === undefined ? 0 : c
+//   })`;
+// }
+// console.log(rgb());
+// Напишите функцию, где пользователь вводит любое целое положительное число.
+// А программа суммирует все числа от 1 до введенного пользователем числа.
+
+// let sum = 0;
+// const checkTask = function (num) {
+//   for (let i = 1; i <= num; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+// console.log(checkTask(+prompt()));
+
+// Напишите функцию, которая принимает на вход массив чисел
+// и возвращает сумму всех элементов массива.
+
+// function checkTask(arr) {
+//   let sum = 0;
+//   for (let i of arr) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+// console.log(checkTask([1, 2, 3, 4, 5]));
+
+// Создайте функцию, которая принимает массив строк и возвращает
+// новый массив, содержащий только те строки, которые начинаются с заглавной буквы.
+
+// const checkTask = function (arr) {
+//   let newArr = [];
+//   for (let i of arr) {
+//     if (i[0] === i[0].toUpperCase()) {
+//       newArr.push(i);
+//     }
+//   }
+//   return newArr;
+// };
+// console.log(checkTask(["aa", "Bb", "Cc", "dD"]));
+
+// Напишите функцию, которая принимает массив чисел и возвращает
+// новый массив, содержащий только четные числа.
+
+// function checkTask(arr) {
+//   let result = [];
+//   for (let i of arr) {
+//     if (i % 2 === 0) {
+//       result.push(i);
+//     }
+//   }
+//   return result;
+// }
+// console.log(checkTask([1, 2, 3, 4]));
+
+// Напишите функцию, которая принимает массив чисел и возвращает
+// наименьшее и наибольшее число в массиве в виде массива из двух элементов.
+// function checkTask(arr) {
+//   let res = [];
+//   let maxNum = 0;
+//   let minNum = 0;
+//   for (let i of arr) {
+//     if (i > maxNum) {
+//       maxNum = i;
+//     } else if (i <= minNum) {
+//       minNum = i;
+//     }
+//   }
+//   res.push(maxNum, minNum);
+//   return res;
+// }
+// console.log(checkTask([12, 5, 7, 9, 0]));
+
+// Создайте функцию, которая принимает массив чисел и возвращает новый массив,
+// содержащий элементы исходного массива в обратном порядке.
+
+// const checkTask = function (arr) {
+//   return arr.reverse();
+//   let newArr = [];
+//   for (let i of arr) {
+//     newArr.unshift(i);
+//   }
+//   return newArr;
+// };
+// console.log(checkTask([1, 2, 3]));
+
+// Напишите функцию, которая принимает массив чисел и возвращает
+// среднее арифметическое всех элементов массива.
+// console.log(checkTask([1, 2, 3, 4]));
+// function checkTask(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// }
+// Реализуйте функцию, которая принимает массив строк и возвращает новый массив,
+// в котором каждая строка записана в верхнем регистре.
+// const checkTask = function (arr) {
+//   let result = [];
+//   for (let i of arr) {
+//     result.push(i[0].toUpperCase() + i.slice(1));
+//   }
+//   return result;
+// };
+// console.log(checkTask(["jhkj", "HJG", "jhjhjh"]));
+
+// Напишите функцию, которая принимает массив чисел и возвращает новый массив,
+// в котором каждый элемент умножен на 2.
+// console.log(checkTask([2, 3, 2]));
+
+// function checkTask(arr) {
+//   let sum = [];
+//   for (let i of arr) {
+//     sum.push(i ** 2);
+//   }
+//   return sum;
+// }
+// Создайте функцию, которая принимает массив строк и возвращает новый массив,
+// содержащий только те строки, которые содержат более 5 символов.
+
+// const checkTask = function (arr) {
+//   let newArr = [];
+//   for (let i of arr) {
+//     if (i.length > 5) {
+//       newArr.push(i);
+//     }
+//   }
+//   return newArr;
+// };
+
+// console.log(checkTask(["hjh", "jhgjhghj", "bjhghhgh", "    r"]));
+
+// "my gym";
+// "tenet";
+// "rotor";
+
+// "islam";
+
+// function limit(num) {
+//     50
+//     100
+//     200
+//     400
+//     800
+//     800
+//     400
+//     200
+//     100
+//     50
+// }
+// limit(2000);
+
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//   i++;
+// }
+
+// let arr = [1, 2, 5, 3, 4, 5];
+
+// let i = 0;
+
+// do {
+//   if (i % 2 === 0) {
+//     console.log(arr[i]);
+//   }
+//   i++;
+// } while (i < arr.length);
+
+// let j = 1;
+
+// while (j > 10) {
+//   console.log(j);
+//   j++;
+// }
+
+// Задание №1
+// Дан массив ["Sultan", "Azamat", "Eldar", "Islam", "Taalai"].
+// Выведите в консоль имена Azamat и Islam с помощью цикла while
+
+// let arr = ["Sultan", "Azamat", "Eldar", "Islam", "Taalai"];
+// let newArr = [];
+// let i = 0;
+// while (i < arr.length) {
+//   if (i % 2 !== 0) {
+//     newArr.push(arr[i]);
+//   }
+//   i++;
+// }
+
+// console.log(newArr);
+// Задание №2
+// Создайте пустой массив и заполните его числами от 1 до 10 с помощью цикла while
+
+// let newArr = [];
+
+// let i = 1;
+// while (i <= 10) {
+//   newArr.push(i);
+//   i++;
+// }
+// console.log(newArr);
+
+// Задание №3
+// Выведите в консоль все числа в промежутке с 50 до 99 включительно с помощью цикла.
+
+// let i = 50;
+// while (i < 100) {
+//   console.log(i);
+//   i++;
+// }
+
+// Задание №4
+// Выведите те же числа, но уже в обратном порядке, т.е. с 99 до 50.
+
+// let i = 99;
+// do {
+//   console.log(i);
+//   i--;
+// } while (i >= 50);
+
+// Задание №5
+// Найдите самый длинный элемент массива и вывкдите в консоль
+
+// let arr = ["pen", "pineapple", "apple", "pen"];
+// let maxStr = "f     ";
+// let i = 0;
+// while (i < arr.length) {
+//   if (arr[i].length < maxStr.length) {
+//     maxStr = arr[i];
+//   }
+//   i++;
+// }
+// console.log(maxStr);
+
+// Задание №6
+// Так же найдите самый короткий элемент этого же массива
+
+// Задание №7
+// Выведите в консоль все элементы с четными индексами.
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let i in arr) {
+//   if (i % 2 === 0) {
+//     console.log(arr[i], "for in");
+//   }
+// }
+
+// let j = 0;
+// while (j < arr.length) {
+//   if (j % 2 === 0) {
+//     console.log(arr[j], "while");
+//   }
+//   j++;
+// }
+
+// let a = 0;
+// do {
+//   if (a % 2 === 0) {
+//     console.log(arr[a], "do while");
+//   }
+//   a++;
+// } while (a < arr.length);
+// Задание №8
+// Дан двумерный массив. Выведите в консоль все элементы.
+// let array = [
+//   [1, 2, 9],
+//   [3, 4, 9],
+//   [5, 6, 9],
+// ];
+
+// for (let i of array) {
+//   for (let j of i) {
+//     console.log(j);
+//   }
+// }
+
+// let i = 0;
+// while (i < array.length) {
+//   let j = 0;
+//   while (j < array[i].length) {
+//     console.log(array[i][j]);
+//     j++;
+//   }
+//   i++;
+// }
+
+// Ввод: functionLimit(50)
+// Вывод:
+// 50
+// 100
+// 200
+// 400
+// 800
+// 800
+// 400
+// 200
+// 100
+// 50
+
+// function limit(num) {
+//   const newNum = num;
+//   while (num <= 1000) {
+//     console.log(num);
+//     num *= 2;
+//   }
+//   while (num > newNum) {
+//     num /= 2;
+//     console.log(num);
+//   }
+// }
+// limit(50);
+
+// function limit(num) {
+//   let i = 50;
+//   while (i <= num) {
+//     console.log(i);
+//     i *= 2;
+//   }
+//   while (i > 50) {
+//     i /= 2;
+//     console.log(i);
+//   }
+// }
+// limit(900000000);
+
+// Напишите функцию palindrom(word), принимающая один аргумент word.
+// Функция, должна выводить в консоль true, если строка является палиндромом,
+// в обратном случае false. При этом нужно учитывать пробелы и регистр.
+// Палиндром – слово, которое читается одинаково слева направо и справа налево
+// (например, ротор)
+
+// Пример №1:
+// Ввод: tenet
+// Ответ: true
+
+// Пример №2:
+// Ввод: my gym
+// Ответ: true
+
+// Пример №3Ж
+// Ввод: nolan
+// Вывод: false
+
+// function findPalindromItems(str) {
+//   let two = str.split(" ").join("");
+//   return (str = str.split("").reverse().join("").split(" ").join("") === two);
+// }
+
+// console.log(findPalindromItems("mygym"));
+
+// "mygym" === "mygym";
+
+// let a = "rf";
+
+// let b = "fr";
+// console.log(a === b);
+
+// let a = "my gym gjhgj
+
+// test(1, 2, 3);
+// function test(a, b, c) {
+//   console.log(...arguments);
+// }
+
+// arrow(1, 2, 3);
+// const arrow = (a, b, c) => {
+//   console.log(a + b / c);
+// };
+
+// console.log(this);
+
+// let obj = {
+//   name: "John",
+//   age: 22,
+// };
+
+// let str = "Bill";
+// console.log(str);
+
+// console.log(obj.age);
+
+let person = {
+  name: "John",
+  age: 10,
+  work: ["HTML", "CSS", "JS"],
+  car: {
+    bmw: "X5",
+    mers: "221",
+  },
+  price: true,
+};
+function checktask(arr) {
+  let res = [];
+  for (let i of arr) {
+    res.push((i += " is cool"));
+  }
+  return {
+    name: "John",
+    age: 10,
+    work: res,
+    car: {
+      bmw: "X5",
+      mers: "221",
+    },
+    price: true,
+  };
+}
+console.log(checktask(["HTML", "CSS", "JS"]));
+
