@@ -1252,3 +1252,192 @@ function checktask(arr) {
 }
 console.log(checktask(["HTML", "CSS", "JS"]));
 
+// > Инженер 35-группа:
+// Напишите функцию checkTask(arr), принимающую в аргументы
+// массив состоящий из других массивов.
+// Используя метод reduce(), найдите сумму всех элементов.
+// Результат выведите в консоль.
+// Например, для массива:
+// [1,2, [4,5,6], [7,8]]
+// Вывод будет:
+// 33
+
+// function checkTask(arr) {
+// let res = [];
+// for (let i of arr) {
+//   if (typeof i === "number") {
+//     res.push(i);
+//   } else {
+//     for (let j of i) {
+//       res.push(j);
+//     }
+//   }
+// }
+// arr = res.reduce((acc, el) => {
+//   return acc + el;
+// });
+// console.log(arr);
+
+// let numArr = arr.flat();
+// numArr = numArr.flat();
+// console.log(numArr);
+// numArr = numArr.reduce((acc, el) => acc + el);
+// console.log(numArr);
+// }
+// checkTask([1, 2, [4, [5], 6], [7, 8]]);
+
+// > Инженер 35-группа:
+// Напишите функцию checkTask(arr), которая получает в качестве параметра массив.
+// Функция должна перебрать все его элементы и вывести сам элемент, а также тип
+// данных элемента - числовой, либо не числовой.
+// К примеру, для массива:
+// ['Молоко', -77, 11, 'Мед', -88]
+// Вывод будет следующим:
+// Молоко - не число
+// -77 - число
+// 11 - число
+// Мед - не число
+// -88 - число
+
+// function checkTask(arr) {
+//   let result = arr.map((el) => {
+//     if (typeof el === "number") {
+//       return `${el} - число`;
+//     } else if (typeof el === "string") {
+//       return `${el} - !число`;
+//     }
+//   });
+//   result.forEach((el) => {
+//     if (el !== undefined) {
+//       console.log(el);
+//     }
+//   });
+// }
+// checkTask(["Молоко", -77, 11, true, "Мед", -88]);
+
+// > Инженер 35-группа:
+// Напишите функцию checkTask(arr), которая будет принимать массив из чисел.
+// Ваша функция должна находить сумму чисел методом forEach(), методом reduce() и map().
+// Для массива [5, 6, 7, 8, 9] вывод будет:
+// forEach: 35
+// reduce: 35
+// map: 35
+
+// function checkTask(arr) {
+// let sum = 0;
+// arr.forEach((el) => (sum += el));
+// console.log(sum);
+// let sum = arr.reduce((acc, el) => acc + el);
+// console.log(sum);
+//   let sum = 0;
+//   arr.map((el) => (sum += el));
+//   console.log(sum);
+// }
+// checkTask([5, 6, 7, 8, 9]);
+
+// > Инженер 35-группа:
+// Создайте функцию checkTask(arr), принимающую массив и элемент
+// массива, и удаляет переданный элемент из массива.
+// Например для аргументов [2, 5, 9, 6] и 5, вывод будет:
+
+// function checkTask(arr, deleteItem) {
+//   let result = arr.map((el) => {
+//     if (el !== deleteItem) {
+//       return el;
+//     }
+//   });
+//   let newArr = [];
+//   result.forEach((el) => {
+//     if (el !== undefined) {
+//       newArr.push(el);
+//     }
+//   });
+//   console.log(newArr);
+
+// let result = arr.filter((el) => el !== deleteItem);
+// console.log(result);
+// }
+// checkTask([2, 5, 9, 6], 9);
+
+// Дан массив с объектами: [
+//     {mark: 'Wolksvagen', year: 2005, price: 8000, sale: 0},
+//     {mark: 'Audi', year: 1996, price: 2500, sale: 0},
+//     {mark: 'Mercedes', year: 2001, price: 5000, sale: 0},
+//     {mark: 'BMW', year: 2015, price: 18000, sale: 0},
+//     {mark: 'Porsche', year: 2020, price: 120000, sale: 0},
+// ], задача: на все автомобили, которые старше 2007 года, поставить скидку
+// 20%(для скидки использовать свойство 'sale')
+
+// let cars = [
+//   { mark: "Wolksvagen", year: 2005, price: 8000, sale: 0 },
+//   { mark: "Audi", year: 1996, price: 2500, sale: 0 },
+//   { mark: "Mercedes", year: 2001, price: 5000, sale: 0 },
+//   { mark: "BMW", year: 2015, price: 18000, sale: 0 },
+//   { mark: "Porsche", year: 2020, price: 120000, sale: 0 },
+// ];
+
+// let result = cars.map((el) => {
+// return {
+//   mark: el.mark,
+//   year: el.year,
+//   price: el.year < 2007 ? el.price - (el.price * 2) / 10 : 0,
+//   sale: el.year < 2007 ? "20% скидка" : "0% скидка",
+// };
+//   return {
+//     mark: el.mark,
+//     year: el.year,
+//     price: el.price,
+//     sale: el.year < 2007 ? el.price - (el.price * 2) / 10 : 0,
+//   };
+// });
+
+// console.log(result);
+
+// let person = [
+//   {
+//     name: "John",
+//     price: 2000,
+//     work: "IT-BACKEND",
+//     salary: 20000,
+//   },
+//   {
+//     name: "John",
+//     price: 2000,
+//     work: "BANK",
+//     salary: 9000,
+//   },
+//   {
+//     name: "John",
+//     price: 2000,
+//     work: "IT-FRONTEND",
+//     salary: 15000,
+//   },
+//   {
+//     name: "John",
+//     price: 2000,
+//     work: "JOURNALIST",
+//     salary: 10000,
+//   },
+// ];
+
+// let result = person.filter((el) => el.work.toLowerCase().includes("it"));
+// console.log(result);
+
+// Дан массив с объектами:
+// let user = [
+//   { name: "Jack", age: 15 },
+//   { name: "Helen", age: 34 },
+//   { name: "Tom", age: 20 },
+//   { name: "Bob", age: 54 },
+//   { name: "Jessica", age: 13 },
+// ];
+
+// let result = user.map((el) =>
+//   el.age >= 18 ? { message: `Hello, ${el.name}` } : el
+// );
+// console.log(result);
+
+// задача: реализовать рассылку сообщений типа: 'Hello,
+// [Здесь должно быть имя клиента],
+// игнорировать клиентов, которым нет 18-ти лет
+
